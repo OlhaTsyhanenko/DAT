@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DAT</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.min.css" />
+  </head>
+  <body>
+    <main>
+      <section class="section section__about">
+        <picture>
+          <source
+            srcset="
+              ./images/about/pic1_desktop.jpg    1x,
+              ./images/about/pic1@2x_desktop.jpg 2x
+            "
+            media="(min-width: 768px)"
+            type="image/jpeg"
+          />
+          <source
+            srcset="
+              ./images/about/pic1_mobile.jpg    1x,
+              ./images/about/pic1@2x_mobile.jpg 2x
+            "
+            media="(max-width: 767px)"
+            type="image/jpeg"
+          />
+          <img
+            class="about__img"
+            src="./images/about/pic1_desktop.jpg"
+            alt="pic1"
+          />
+        </picture>
+        <div class="about__wrapper">
+          <h2 class="title">
+            <svg width="14px" height="11px" class="title__left">
+              <use href="./images/symbol-defs.svg#icon-title"></use>
+            </svg>
+            Про нас
+          </h2>
+          <div class="about__description">
+            <p class="description">
+              <span>«Компанія ТОВ “ДАМАР АГРОТРЕЙД”</span> — молода команда, яка
+              з’явилась на аграрному ринку у 2020 році. Ми не боїмось труднощів
+              і викликів. Тому навіть складний ковідний період, світова пандемія
+              не стали на заваді успішному старту.
+            </p>
+            <p class="description">
+              Отже, <span>ми — сміливі, ми — драйвові</span>, ми — ті, що
+              розвивають рослинництво та допомагають ставати успішними тисячам
+              вітчизняних аграріїв.
+            </p>
+            <p class="description">
+              <span>Бачення:</span> компанія ТОВ “ДАМАР АГРОТРЕЙД” тримає курс
+              на підвищення престижності, довіри до засобів захисту рослин made
+              in UA. Прагнемо, аби в кожному регіоні України наш споживач мав
+              доступ до якісної продукції та консалтингу від фахівців команди.
+            </p>
+            <p class="description">
+              <span>Місія:</span> усе продуктове портфоліо, консультативні
+              послуги ТОВ “ДАМАР АГРОТРЕЙД” направлені на підвищення
+              рентабельності рослинництва в мінливих кліматичних умовах України.
+              Також ставимо собі завдання підвищувати обізнаність клієнтів щодо
+              сучасних методів ведення рослинництва...
+            </p>
+          </div>
+          <button class="btn">Докладніше</button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

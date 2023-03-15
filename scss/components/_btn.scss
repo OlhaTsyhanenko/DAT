@@ -1,0 +1,17 @@
+.btn {
+    display: block;
+    padding: 15px 0;
+    margin: 0;
+    background-color: var(--btnColor);
+    border-radius: 90px;
+    font-weight: 700;
+    text-align: center;
+    color: var(--whiteTextColor);
+    width: 220px;
+    border: none;
+    cursor: pointer;
+
+    @media screen and (min-width: $tablet){
+        width: 220px;
+    }
+}

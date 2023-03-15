@@ -1,0 +1,30 @@
+:root {
+
+    // Colors
+    --bgColor: #FFFFFF;
+    --secondBgColor: #1E6140;
+    --textColor: rgba(0, 0, 0, 0.6);
+    --whiteTextColor: #ffffff;
+    --accentColor: #84C551;
+    --secondTextColor: #000000;
+    --secondAccentColor: #8C3213;
+    --btnColor: #E74E13;
+
+    // Fonts
+    // font-family: 'Montserrat', sans-serif;
+
+    --time: 250ms;
+    --duration: cubic-bezier(0.4, 0, 0.2, 1);
+
+    //screen
+    --mobile: 320px;
+    --tablet: 768px;
+    --tablet2: 1200px;
+    --desktop: 1920px;
+}
+
+//screen
+$mobile: 320px;
+$tablet: 768px;
+$tablet2: 1200px;
+$desktop: 1920px;

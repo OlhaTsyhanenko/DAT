@@ -1,0 +1,24 @@
+.section__about {
+
+    @media screen and (min-width:$tablet2) {
+        display: flex;
+
+    }
+}
+
+.about__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0 145px 0 145px;
+}
+
+.about__description {
+    margin-top: 11px;
+    margin-bottom: 31px;
+
+    @media screen and (min-width:$tablet2) {
+        margin-top: 25px;
+        margin-bottom: 37px;
+    }
+}
