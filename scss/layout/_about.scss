@@ -7,10 +7,13 @@
 
     }
     @media screen and (min-width: $desktop) {
-        gap: 0;
-        width: 1400px;
         align-items: center;
-        justify-items: end;
+        gap: 60px;
+    }
+    @media screen and (min-width: $bigDesktop) {
+        width: 1400px;
+        gap: 0;
+        justify-items: center;
     }
 }
 
@@ -71,7 +74,6 @@
     @media screen and (max-width:$tablet) {
       margin-bottom: 24px;
     }
-
 }
 
 .about__wrapper {
