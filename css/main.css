@@ -126,7 +126,7 @@ body {
 }
 .title .title__right {
   margin-left: 9px;
-  transform: rotate(180deg);
+  transform: rotate(90deg);
 }
 @media screen and (min-width: 768px) {
   .title .title__right {
@@ -210,6 +210,39 @@ body {
   .seed__btn {
     display: none;
   }
+}
+
+.description__btn {
+  position: absolute;
+  right: 15%;
+  bottom: 17%;
+  padding: 15px 15px 12px 16px;
+  background-color: var(--bgColor);
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: background-color var(--time) var(--duration);
+}
+.description__btn svg {
+  fill: var(--secondAccentColor);
+  transition: fill var(--time) var(--duration);
+}
+.description__btn:hover, .description__btn:focus {
+  background-color: var(--secondAccentColor);
+}
+.description__btn:hover svg, .description__btn:focus svg {
+  fill: var(--whiteTextColor);
+}
+
+.new__btn {
+  position: absolute;
+  top: 0;
+  right: 5%;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 15px;
 }
 
 @media screen and (min-width: 768px) {
@@ -312,6 +345,74 @@ body {
     margin-top: 25px;
     margin-bottom: 37px;
   }
+}
+
+.new__section {
+  margin-top: 35px;
+  margin-bottom: 40px;
+  background-color: antiquewhite;
+}
+@media screen and (min-width: 768px) {
+  .new__section {
+    margin-top: 87px;
+    margin-bottom: 120px;
+  }
+}
+
+.new__title {
+  text-align: center;
+}
+
+.new__list {
+  margin-top: 14px;
+}
+@media screen and (min-width: 768px) {
+  .new__list {
+    margin-top: 39px;
+  }
+}
+
+.new__item {
+  position: relative;
+  background-color: var(--bgColor);
+  border-radius: 20px;
+  padding: 31px 10px 10px 10px;
+  width: 255px;
+}
+
+.new__img {
+  margin: 0 auto 32px auto;
+}
+
+.new__description {
+  position: relative;
+  background-color: rgba(140, 50, 19, 0.06);
+  border-radius: 20px;
+  padding: 20px 20px 25px 20px;
+}
+
+.description__title {
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--secondTextColor);
+}
+
+.description__lable {
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--secondBgColor);
+  margin-bottom: 17px;
+}
+
+.description__price {
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--accentColor);
+}
+
+.description__quantity {
+  font-weight: 400;
+  font-size: 14px;
 }
 
 .section__seed {
