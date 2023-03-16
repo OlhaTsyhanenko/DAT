@@ -17,29 +17,33 @@
   <body>
     <main>
       <section class="section section__about">
-        <picture>
-          <source
-            srcset="
-              ./images/about/pic1_desktop.jpg    1x,
-              ./images/about/pic1@2x_desktop.jpg 2x
-            "
-            media="(min-width: 768px)"
-            type="image/jpeg"
-          />
-          <source
-            srcset="
-              ./images/about/pic1_mobile.jpg    1x,
-              ./images/about/pic1@2x_mobile.jpg 2x
-            "
-            media="(max-width: 767px)"
-            type="image/jpeg"
-          />
-          <img
-            class="about__img"
-            src="./images/about/pic1_desktop.jpg"
-            alt="pic1"
-          />
-        </picture>
+        <div class="about__pic">
+          <picture>
+            <source
+              srcset="
+                ./images/about/pic1_desktop.png    1x,
+                ./images/about/pic1@2x_desktop.png 2x
+              "
+              media="(min-width: 768px)"
+              type="image/jpeg"
+            />
+            <source
+              srcset="
+                ./images/about/pic1_mobile.png    1x,
+                ./images/about/pic1@2x_mobile.png 2x
+              "
+              media="(max-width: 767px)"
+              type="image/png"
+            />
+            <img
+              class="about__img"
+              src="./images/about/pic1_desktop.png"
+              alt="pic1"
+            />
+          </picture>
+          <div class="about__leaf1"></div>
+          <div class="about__leaf2"></div>
+        </div>
         <div class="about__wrapper">
           <h2 class="title">
             <svg width="14px" height="11px" class="title__left">

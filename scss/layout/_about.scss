@@ -1,8 +1,64 @@
 .section__about {
 
-    @media screen and (min-width:$tablet2) {
-        display: flex;
+    @media screen and (min-width:$tablet) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
 
+    }
+    @media screen and (min-width: $desktop) {
+        gap: 0;
+        width: 1400px;
+        align-items: center;
+        justify-items: end;
+    }
+}
+
+.about__pic {
+    position: relative;
+}
+
+.about__leaf1 {
+    @media screen and (max-width: $tablet) {
+        display: none;
+    }
+    @media screen and (min-width: $desktop) {
+        position: absolute;
+        width: 246px;
+        height: 178px;
+        z-index: 1;
+        bottom: 10%;
+        left:-10%;
+        background-repeat: no-repeat;
+        background-image: url(../../images/about/leaf1.png);
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(../../images/leaf1@2x.png);
+        }
+    }
+}
+
+.about__leaf2 {
+    @media screen and (max-width: $tablet) {
+        display: none;
+    }
+
+    @media screen and (min-width: $desktop) {
+        position: absolute;
+        width: 152px;
+        height: 110px;
+        z-index: 1;
+        bottom: -5%;
+        left: 10%;
+        background-repeat: no-repeat;
+        background-image: url(../../images/about/leaf2.png);
+        filter: blur(2px);
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(../../images/leaf2@2x.png);
+        }
     }
 }
 
@@ -10,14 +66,25 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 0 145px 0 145px;
+    max-width: 683px;
+    border-radius: 0 32%;
+    @media screen and (max-width:$tablet) {
+      margin-bottom: 24px;
+    }
+
+}
+
+.about__wrapper {
+    @media screen and (min-width: $desktop) {
+        width: 541px;
+    }
 }
 
 .about__description {
     margin-top: 11px;
     margin-bottom: 31px;
 
-    @media screen and (min-width:$tablet2) {
+    @media screen and (min-width:$desktop) {
         margin-top: 25px;
         margin-bottom: 37px;
     }
