@@ -3,6 +3,10 @@
     margin-bottom: 40px;
     background-color: antiquewhite;
 
+    @media screen and (max-width: $tablet) {
+        // padding: 0;
+    }
+
     @media screen and (min-width: $tablet) {
         margin-top: 87px;
         margin-bottom: 120px;
@@ -25,7 +29,20 @@
     background-color: var(--bgColor);
     border-radius: 20px;
     padding: 31px 10px 10px 10px;
-    width: 255px;
+    margin-right: 20px;
+    margin-left: 20px;
+    @media screen and (min-width: 560px) {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    @media screen and (min-width: $desktop) {
+        width: 255px;
+        height: 355px;
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
+
+    }
 }
 
 .new__img {
@@ -61,4 +78,15 @@
 .description__quantity {
     font-weight: 400;
     font-size: 14px;
+}
+
+.slider {
+    overflow: hidden;
+    outline: 1px solid red;
+}
+
+.slider-line {
+    display: flex;
+    flex-wrap: nowrap;
+    transition: all ease 1s;
 }

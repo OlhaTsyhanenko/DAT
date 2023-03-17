@@ -377,7 +377,23 @@ body {
   background-color: var(--bgColor);
   border-radius: 20px;
   padding: 31px 10px 10px 10px;
-  width: 255px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+@media screen and (min-width: 560px) {
+  .new__item {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .new__item {
+    width: 255px;
+    height: 355px;
+  }
+  .new__item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .new__img {
@@ -413,6 +429,17 @@ body {
 .description__quantity {
   font-weight: 400;
   font-size: 14px;
+}
+
+.slider {
+  overflow: hidden;
+  outline: 1px solid red;
+}
+
+.slider-line {
+  display: flex;
+  flex-wrap: nowrap;
+  transition: all ease 1s;
 }
 
 .section__seed {
