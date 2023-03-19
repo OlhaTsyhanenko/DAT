@@ -67,13 +67,13 @@
     transition: background-color var(--time) var(--duration);
 
     svg {
-        fill: var(--secondAccentColor);
+        fill: var(--btnCard);
         transition: fill var(--time) var(--duration);
     }
 
     &:hover,
     &:focus {
-        background-color: var(--secondAccentColor);
+        background-color: var(--btnCard);
         svg {
             fill: var(--whiteTextColor);
         }

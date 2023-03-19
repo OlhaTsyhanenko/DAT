@@ -7,6 +7,7 @@
   --secondTextColor: #000000;
   --secondAccentColor: #8C3213;
   --btnColor: #E74E13;
+  --btnCard: #8D3200;
   --time: 250ms;
   --duration: cubic-bezier(0.4, 0, 0.2, 1);
   --mobile: 320px;
@@ -225,11 +226,11 @@ body {
   transition: background-color var(--time) var(--duration);
 }
 .description__btn svg {
-  fill: var(--secondAccentColor);
+  fill: var(--btnCard);
   transition: fill var(--time) var(--duration);
 }
 .description__btn:hover, .description__btn:focus {
-  background-color: var(--secondAccentColor);
+  background-color: var(--btnCard);
 }
 .description__btn:hover svg, .description__btn:focus svg {
   fill: var(--whiteTextColor);
@@ -348,9 +349,12 @@ body {
 }
 
 .new__section {
-  margin-top: 35px;
-  margin-bottom: 40px;
   background-color: antiquewhite;
+}
+@media screen and (max-width: 768px) {
+  .new__section {
+    padding: 35px 0 70px 0;
+  }
 }
 @media screen and (min-width: 768px) {
   .new__section {
@@ -363,39 +367,27 @@ body {
   text-align: center;
 }
 
-.new__list {
+.slider__inner {
   margin-top: 14px;
+  margin-right: auto;
+  margin-left: auto;
 }
 @media screen and (min-width: 768px) {
-  .new__list {
+  .slider__inner {
     margin-top: 39px;
   }
 }
 
-.new__item {
+.slider__item {
   position: relative;
   background-color: var(--bgColor);
   border-radius: 20px;
+  box-shadow: 0px 0px 23px rgba(0, 0, 0, 0.15);
   padding: 31px 10px 10px 10px;
-  margin-right: 20px;
-  margin-left: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
+  max-width: 255px;
 }
-@media screen and (min-width: 560px) {
-  .new__item {
-    margin-right: 10px;
-    margin-left: 10px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .new__item {
-    width: 255px;
-    height: 355px;
-  }
-  .new__item:not(:last-child) {
-    margin-right: 30px;
-  }
-}
-
 .new__img {
   margin: 0 auto 32px auto;
 }
@@ -409,8 +401,13 @@ body {
 
 .description__title {
   font-weight: 600;
-  font-size: 16px;
+  font-size: 14px;
   color: var(--secondTextColor);
+}
+@media screen and (min-width: 768px) {
+  .description__title {
+    font-size: 16px;
+  }
 }
 
 .description__lable {
@@ -431,15 +428,32 @@ body {
   font-size: 14px;
 }
 
-.slider {
-  overflow: hidden;
-  outline: 1px solid red;
+.slick-dots {
+  bottom: -60px;
 }
 
-.slider-line {
-  display: flex;
-  flex-wrap: nowrap;
-  transition: all ease 1s;
+.slick-dots li {
+  width: auto;
+  height: auto;
+}
+
+.slick-dots li button {
+  width: 6px;
+  height: 16px;
+  background-color: rgba(141, 50, 0, 0.1);
+  border-radius: 20px;
+}
+
+.slick-dots li.slick-active button {
+  width: 6px;
+  height: 30px;
+  background-color: var(--btnCard);
+  border-radius: 20px;
+  transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.slick-dots li button::before {
+  display: none;
 }
 
 .section__seed {

@@ -1,10 +1,10 @@
 .new__section {
-    margin-top: 35px;
-    margin-bottom: 40px;
+    // margin-top: 35px;
+    // margin-bottom: 40px;
     background-color: antiquewhite;
 
     @media screen and (max-width: $tablet) {
-        // padding: 0;
+        padding: 35px 0 70px 0;
     }
 
     @media screen and (min-width: $tablet) {
@@ -17,29 +17,35 @@
     text-align: center;
 }
 
-.new__list {
+.slider__inner {
     margin-top: 14px;
+    margin-right: auto;
+    margin-left: auto;
     @media screen and (min-width: $tablet) {
         margin-top: 39px;
     }
 }
 
-.new__item {
+.slider__item {
+    // outline: 1px solid red;
     position: relative;
     background-color: var(--bgColor);
     border-radius: 20px;
+    box-shadow: 0px 0px 23px rgba(0, 0, 0, 0.15);
     padding: 31px 10px 10px 10px;
-    margin-right: 20px;
-    margin-left: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+    max-width: 255px;
+
     @media screen and (min-width: 560px) {
-        margin-right: 10px;
-        margin-left: 10px;
+        // margin-right: 10px;
+        // margin-left: 10px;
     }
     @media screen and (min-width: $desktop) {
-        width: 255px;
-        height: 355px;
+        // width: 255px;
+
         &:not(:last-child) {
-            margin-right: 30px;
+            // margin-right: 30px;
         }
 
     }
@@ -58,8 +64,12 @@
 
 .description__title {
     font-weight: 600;
-    font-size: 16px;
+    font-size: 14px;
     color: var(--secondTextColor);
+
+    @media screen and (min-width: $tablet) {
+        font-size: 16px;
+    }
 }
 
 .description__lable {
@@ -80,13 +90,49 @@
     font-size: 14px;
 }
 
-.slider {
-    overflow: hidden;
-    outline: 1px solid red;
+.slick-dots {
+    bottom: -60px;
 }
 
-.slider-line {
-    display: flex;
-    flex-wrap: nowrap;
-    transition: all ease 1s;
+.slick-dots li {
+    width: auto;
+    height: auto;
 }
+
+.slick-dots li button {
+    width: 6px;
+    height: 16px;
+    background-color: rgba(141, 50, 0, 0.1);
+    border-radius: 20px;
+}
+
+.slick-dots li.slick-active button {
+    width: 6px;
+    height: 30px;
+    background-color: var(--btnCard);
+    border-radius: 20px;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.slick-dots li button::before {
+    display: none;
+}
+
+// .content {
+//     margin: auto;
+//     padding: 30px;
+//     width: 100%;
+//     max-width: 600px;
+//     box-sizing: border-box;
+// }
+
+// h3 {
+//     background: #fff;
+//     color: #3498db;
+//     font-size: 36px;
+//     line-height: 100px;
+//     margin: 10px;
+//     padding: 2%;
+//     position: relative;
+//     text-align: center;
+// }
