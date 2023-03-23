@@ -1,24 +1,31 @@
 .section__about {
 
     @media screen and (min-width:$tablet) {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 30px;
+        display: flex;
+        justify-content: space-between;
+        div {
+            flex-basis: calc((100% - 30px) / 2 );
+        }
+    }
 
-    }
     @media screen and (min-width: $desktop) {
-        align-items: center;
-        gap: 60px;
+        width: 1200px;
     }
+
     @media screen and (min-width: $bigDesktop) {
         width: 1400px;
-        gap: 0;
-        justify-items: center;
+        div {
+                flex-basis: calc(100% / 2);
+            }
     }
 }
 
 .about__pic {
     position: relative;
+
+    @media screen and (min-width: $bigDesktop) {
+    margin-right: 120px;
+    }
 }
 
 .about__leaf1 {
@@ -70,18 +77,17 @@
     height: 100%;
     object-fit: cover;
     max-width: 683px;
-    border-radius: 0 32%;
+    border-radius: 0 155px;
     @media screen and (max-width:$tablet) {
       margin-bottom: 24px;
     }
 }
-
 .about__wrapper {
-    @media screen and (min-width: $desktop) {
-        width: 541px;
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        flex-direction: column;
     }
 }
-
 .about__description {
     margin-top: 11px;
     margin-bottom: 31px;

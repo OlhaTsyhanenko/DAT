@@ -1,15 +1,22 @@
 .new__section {
-    // margin-top: 35px;
-    // margin-bottom: 40px;
-    background-color: antiquewhite;
-
-    @media screen and (max-width: $tablet) {
-        padding: 35px 0 70px 0;
-    }
+    padding: 35px 0 40px 0;
 
     @media screen and (min-width: $tablet) {
-        margin-top: 87px;
-        margin-bottom: 120px;
+        padding: 87px 0 120px 0;
+    }
+
+    @media screen and (min-width: $desktop) {
+        padding: 87px 30px 120px 30px;
+    }
+    @media screen and (min-width: $bigDesktop) {
+        padding: 87px 250px 120px 250px;
+    }
+
+    &.background {
+        background-color: var(--secondBgColor);
+        @media screen and (min-width: $tablet) {
+            padding-bottom: 105px;
+        }
     }
 }
 
@@ -18,37 +25,32 @@
 }
 
 .slider__inner {
+    position: relative;
     margin-top: 14px;
-    margin-right: auto;
-    margin-left: auto;
+
     @media screen and (min-width: $tablet) {
         margin-top: 39px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        margin-left: auto;
+        margin-right: auto;
+        width: 885px;
+    }
+    @media screen and (min-width: $bigDesktop) {
+        width: 1140px;
     }
 }
 
 .slider__item {
-    // outline: 1px solid red;
     position: relative;
     background-color: var(--bgColor);
     border-radius: 20px;
-    box-shadow: 0px 0px 23px rgba(0, 0, 0, 0.15);
     padding: 31px 10px 10px 10px;
-    margin-right: 10px;
-    margin-left: 10px;
-    max-width: 255px;
-
-    @media screen and (min-width: 560px) {
-        // margin-right: 10px;
-        // margin-left: 10px;
+    @media screen and (max-width: $tablet) {
+        box-shadow: 0px 0px 23px rgba(0, 0, 0, 0.15);
     }
-    @media screen and (min-width: $desktop) {
-        // width: 255px;
 
-        &:not(:last-child) {
-            // margin-right: 30px;
-        }
-
-    }
 }
 
 .new__img {
@@ -90,49 +92,109 @@
     font-size: 14px;
 }
 
-.slick-dots {
-    bottom: -60px;
+.slick-track {
+    display: flex;
 }
 
-.slick-dots li {
+.slick-list {
+    overflow: hidden;
+}
+
+.slider__inner .slick-arrow {
+    position: absolute;
+    top: 50%;
+    margin: -70px 0 0 0;
+    z-index: 1;
+    font-size: 0;
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 1px solid var(--accentColor);
+    padding: 25px;
+    transition: background-color var(--time) var(--duration);
+
+    &:hover,
+    &:focus {
+        background-color: var(--accentColor);
+    }
+}
+
+.slider__inner .slick-arrow.slick-prev {
+    left: -90px;
+    width: 20px;
+    height: 20px;
+    background-image: url(/images/new/arrow.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-image var(--time) var(--duration);
+    &:hover,
+    &:focus {
+        background-image: url(/images/new/arrow-white.svg);
+    }
+}
+
+.slider__inner .slick-arrow.slick-next {
+    right: -90px;
+    width: 20px;
+    height: 20px;
+    background-image: url(/images/new/arrow.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: rotate(180deg);
+    transition: background-image var(--time) var(--duration);
+    &:hover,
+    &:focus {
+        background-image: url(/images/new/arrow-white.svg);
+    }
+}
+
+.slider__inner .slick-dots {
+    padding: 0;
+    margin: 30px 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    @media screen and (min-width: $tablet) {
+        margin: 40px 0;
+    }
+}
+
+.slider__inner .slick-dots li {
+    list-style: none;
     width: auto;
     height: auto;
+    margin-right: 10px;
 }
 
-.slick-dots li button {
+.slider__inner .slick-dots li button {
+    font-size: 0;
     width: 6px;
     height: 16px;
+    border: none;
     background-color: rgba(141, 50, 0, 0.1);
     border-radius: 20px;
 }
 
-.slick-dots li.slick-active button {
+.slider__inner.white .slick-dots li button {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.slider__inner .slick-dots li.slick-active button {
     width: 6px;
     height: 30px;
     background-color: var(--btnCard);
     border-radius: 20px;
-    transform: matrix(1, 0, 0, -1, 0, 0);
 }
 
-.slick-dots li button::before {
-    display: none;
+.slider__inner.white .slick-dots li.slick-active button {
+    background-color: var(--whiteTextColor);
 }
 
-// .content {
-//     margin: auto;
-//     padding: 30px;
-//     width: 100%;
-//     max-width: 600px;
-//     box-sizing: border-box;
-// }
+.slider__inner .slick-slide {
+    margin-right: 10px;
+    margin-left: 10px;
+}
 
-// h3 {
-//     background: #fff;
-//     color: #3498db;
-//     font-size: 36px;
-//     line-height: 100px;
-//     margin: 10px;
-//     padding: 2%;
-//     position: relative;
-//     text-align: center;
+// .slider__inner .slick-slide div{
+//     box-shadow: 0px 0px 23px rgba(0, 0, 0, 0.15);
 // }

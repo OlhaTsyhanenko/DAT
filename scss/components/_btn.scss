@@ -20,6 +20,13 @@
     @media screen and (max-width:$tablet) {
       margin: 0 auto;
     }
+    @media screen and (min-width:$tablet) {
+        margin-top: auto;
+    }
+}
+
+.new__mainBtn {
+    margin: 0 auto;
 }
 
 .seed__btn {
