@@ -20,7 +20,7 @@
   </head>
   <body>
     <main>
-      <section class="section section__about">
+      <section class="section__about">
         <div class="about__pic">
           <picture>
             <source
@@ -529,6 +529,96 @@
         </div>
       </section>
     </main>
+
+    <footer class="footer section">
+      <div class="footer__inner">
+        <div class="footer__logo">
+          <picture>
+            <source
+              srcset="./images/logo.png 1x, ./images/logo@2x.png 2x"
+              media="(min-width: 320px)"
+              type="image/png"
+            />
+            <img class="logo__img" src="./images/logo.png" alt="logo" />
+          </picture>
+          <p class="logo__description">
+            Пропонуємо покупцям широкий вибір насіння овочів
+          </p>
+        </div>
+        <div class="info-prod__inner">
+          <div class="footer__information">
+            <h3 class="footer__title">Інформація</h3>
+            <ul class="list information__list">
+              <li class="footer__item">
+                <a href="" class="link information__link">Про компанію</a>
+              </li>
+              <li class="footer__item">
+                <a href="" class="link information__link">Оплата і доставка</a>
+              </li>
+              <li class="footer__item">
+                <a href="" class="link information__link">Партнери</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__products">
+            <h3 class="footer__title">Товари</h3>
+            <ul class="list products__list">
+              <li class="footer__item">
+                <a href="" class="link products__link">Каталог продукції</a>
+              </li>
+              <li class="footer__item">
+                <a href="" class="link products__link">Засоби захисту рослин</a>
+              </li>
+              <li class="footer__item">
+                <a href="" class="link products__link">Насіння</a>
+              </li>
+              <li class="footer__item">
+                <a href="" class="link products__link">Добрива</a>
+              </li>
+              <li class="footer__item">
+                <a href="" class="link products__link">Агроному в поміч</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__contacts">
+          <h3 class="footer__title">Інформація</h3>
+          <ul class="list contacts__list">
+            <li class="contacts__item">
+              <button class="footer__btn">
+                <svg width="16px" height="16px">
+                  <use href="./images/symbol-defs.svg#icon-call"></use>
+                </svg>
+              </button>
+              <div class="contacts__wrapper">
+                <div>
+                  <a href="tel:+380671150058" class="link contacts__link"
+                    >+38 (067) 115 00 58</a
+                  >
+                  <svg width="10px" height="10px">
+                    <use href="./images/symbol-defs.svg#icon-arrow-down"></use>
+                  </svg>
+                </div>
+                <a href="" class="link contacts__call"
+                  >Замовити зворотній зв’язок</a
+                >
+              </div>
+            </li>
+            <li class="contacts__item">
+              <button class="footer__btn">
+                <svg width="16px" height="16px">
+                  <use href="./images/symbol-defs.svg#icon-email"></use>
+                </svg>
+              </button>
+              <a href="mailto:DAT@gmail.com" class="link contacts__link"
+                >DAT@gmail.com</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer__copyright">&copy; 2022 DAT</p>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="js/slick.min.js"></script>

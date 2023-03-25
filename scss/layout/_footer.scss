@@ -1,0 +1,109 @@
+.footer__inner {
+    padding: 40px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+
+    @media screen and (min-width: $desktop) {
+        padding: 120px 0;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.footer__logo {
+    @media screen and (min-width: $desktop) {
+        flex-basis: calc(100%/ 4 - 70px);
+    }
+}
+
+.info-prod__inner {
+    display: flex;
+
+    @media screen and (max-width: 1199px) {
+        flex-direction: row-reverse;
+    }
+    @media screen and (min-width: $desktop) {
+        flex-basis: calc(100%/2 -70px);
+        justify-content: space-between;
+    }
+}
+
+.footer__information {
+    @media screen and (min-width: $desktop) {
+        flex-basis: calc(100%/2 -35px);
+    }
+
+}
+
+.footer__products {
+    @media screen and (min-width: $desktop) {
+        flex-basis: calc(100%/2 -35px);
+    }
+}
+
+.footer__contacts {
+    @media screen and (min-width: $desktop) {
+        flex-basis: calc(100%/ 4 - 70px);
+    }
+}
+
+.logo__description {
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.6);
+    margin-top: 15px;
+}
+
+.footer__title {
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--secondTextColor);
+    margin-bottom: 26px;
+
+    @media screen and (min-width: $desktop) {
+        font-size: 18px;
+    }
+}
+
+.footer__item:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.contacts__item {
+    display: flex;
+    align-items: center;
+
+    &:not(:last-child) {
+            margin-bottom: 20px;
+    }
+}
+
+.contacts__wrapper {
+    div {
+        display: flex;
+        align-items: center;
+        svg {
+            fill: var(--accentColor);
+            margin-left: 3px;
+        }
+    }
+}
+
+.contacts__link {
+    font-size: 16px;
+    color: var(--secondTextColor);
+}
+
+.contacts__call {
+    font-weight: 700;
+    font-size: 14px;
+    text-decoration-line: underline;
+    color: var(--accentColor);
+    margin-top: 3px;
+}
+
+.footer__copyright {
+    font-size: 14px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 17px;
+    margin-top: 17px;
+}

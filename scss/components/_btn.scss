@@ -49,6 +49,7 @@
 
     svg {
         margin-left: 8px;
+        fill: var(--whiteTextColor);
     }
 
     .arrow-up {
@@ -95,4 +96,25 @@
     background-color: transparent;
     cursor: pointer;
     padding: 15px;
+}
+
+.footer__btn {
+    padding: 12px 13px;
+    border: 1px solid var(--secondAccentColor);
+    background-color: transparent;
+    border-radius: 50%;
+    margin-right: 6px;
+    transition: background-color var(--time) var(--duration);
+    svg {
+        fill: var(--secondAccentColor);
+        transition: fill var(--time) var(--duration);
+    }
+
+    &:hover,
+    &:focus {
+        background-color: var(--secondAccentColor);
+        svg {
+                fill: var(--whiteTextColor);
+            }
+    }
 }

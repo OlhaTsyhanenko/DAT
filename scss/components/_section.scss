@@ -7,10 +7,10 @@
     }
 
     @media screen and (min-width:$desktop) {
-        padding: 0 53px;
+        padding: 0 45px;
     }
     @media screen and (min-width:$bigDesktop) {
-        padding: 0;
+        padding: 0 405px;
         max-width: 1920px;
     }
 }

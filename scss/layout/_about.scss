@@ -1,18 +1,22 @@
 .section__about {
+    margin: 0 auto;
+    padding: 0 15px;
 
     @media screen and (min-width:$tablet) {
         display: flex;
         justify-content: space-between;
+        padding: 0 30px;
         div {
             flex-basis: calc((100% - 30px) / 2 );
         }
     }
 
     @media screen and (min-width: $desktop) {
-        width: 1200px;
+        padding: 0 45px;
     }
 
     @media screen and (min-width: $bigDesktop) {
+        padding: 0;
         width: 1400px;
         div {
                 flex-basis: calc(100% / 2);
