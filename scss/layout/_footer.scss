@@ -1,3 +1,7 @@
+.footer {
+    position: relative;
+}
+
 .footer__inner {
     padding: 40px 0;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
@@ -11,38 +15,50 @@
 
 .footer__logo {
     @media screen and (min-width: $desktop) {
-        flex-basis: 100%;
+        flex-basis: calc(100% / 4 - 70px);
     }
 }
 
 .info-prod__inner {
     display: flex;
 
+
     @media screen and (max-width: 1199px) {
         flex-direction: row-reverse;
+        justify-content: flex-end;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
     @media screen and (min-width: $desktop) {
-        flex-basis: calc(100%/ 2 - 70px);
+        flex-basis: calc(100% / 2 - 70px);
         justify-content: space-between;
     }
 }
 
 .footer__information {
-    @media screen and (min-width: $desktop) {
-
+    @media screen and (min-width: $tablet) {
+        flex-basis: calc(100% / 2 - 15px);
     }
-
+    @media screen and (min-width: $desktop) {
+        flex-basis: calc(100% / 2 - 35px);
+    }
 }
 
 .footer__products {
+    @media screen and (max-width: 767px) {
+        margin-right: 60px;
+    }
+    @media screen and (min-width: $tablet) {
+        flex-basis: calc(100% / 2 - 15px);
+    }
     @media screen and (min-width: $desktop) {
-
+        flex-basis: calc(100% / 2 - 35px);
     }
 }
 
 .footer__contacts {
     @media screen and (min-width: $desktop) {
-        flex-basis: calc(100%/ 4 -70px);
+        flex-basis: calc(100% / 4 - 24px);
     }
 }
 
@@ -104,6 +120,37 @@
     font-size: 14px;
     text-align: center;
     color: rgba(0, 0, 0, 0.5);
-    margin-bottom: 17px;
-    margin-top: 17px;
+    padding-bottom: 17px;
+    padding-top: 17px;
+}
+
+.back-to-top-wrapper {
+    position: absolute;
+    bottom: 0;
+    right: 15px;
+    padding: 30px 23px 61px 22px;
+    background-color: var(--accentColor);
+    border: none;
+    border-radius: 30px 30px 0 0;
+    @media screen and (min-width: $tablet) {
+        padding: 30px 23px 80px 22px;
+        right: 3%;
+    }
+
+    @media screen and (min-width: $bigDesktop) {
+        right: 15%;
+    }
+    pointer-events: none;
+}
+
+.back-to-top-link {
+    pointer-events: all;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+
+    html,
+    body {
+        scroll-behavior: smooth;
+    }
 }
