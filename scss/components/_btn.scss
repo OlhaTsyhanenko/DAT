@@ -16,6 +16,15 @@
     }
 }
 
+.nav__btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    @media screen and (min-width: $desktop) {
+        display: none;
+    }
+}
+
 .about__btn {
     @media screen and (max-width:$tablet) {
       margin: 0 auto;
