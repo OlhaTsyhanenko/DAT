@@ -109,6 +109,9 @@
 .contacts__link {
     font-size: 16px;
     color: var(--secondTextColor);
+    &.white {
+        color: var(--whiteTextColor);
+    }
 }
 
 .contacts__call {

@@ -33,12 +33,16 @@
 
 .btn__shopping-cart,
 .btn__comparison {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: none;
     cursor: pointer;
     background-color: transparent;
     border: 1px solid var(--whiteTextColor);
     border-radius: 50%;
-    padding: 12px;
+    width: 40px;
+    height: 40px;
     svg {
         fill: var(--whiteTextColor);
     }
@@ -48,6 +52,34 @@
     margin-left: 11px;
     svg {
         fill: var(--whiteTextColor);
+    }
+}
+
+.btn__heart {
+    flex-shrink: 0;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid var(--whiteTextColor);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    padding: 12px;
+}
+
+.zoom__btn {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    &::before {
+        display: block;
+        content: '';
+        width: 1px;
+        height: 28px;
+        background-color: rgba(0, 0, 0, 0.2);
+        margin-right: 14px;
     }
 }
 
@@ -101,7 +133,11 @@
     position: absolute;
     right: 15%;
     bottom: 17%;
-    padding: 15px 15px 12px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
     background-color: var(--bgColor);
     border: none;
     border-radius: 50%;
@@ -137,7 +173,11 @@
 }
 
 .footer__btn {
-    padding: 12px 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
     border: 1px solid var(--secondAccentColor);
     background-color: transparent;
     border-radius: 50%;
@@ -151,6 +191,13 @@
     &:hover,
     &:focus {
         background-color: var(--secondAccentColor);
+        svg {
+                fill: var(--whiteTextColor);
+            }
+    }
+
+    &.white {
+        border: 1px solid var(--whiteTextColor);
         svg {
                 fill: var(--whiteTextColor);
             }

@@ -12,11 +12,14 @@
         top: 52px;
         left: 0;
         width: 100%;
-        height: 100%;
         padding: 20px 15px 50px 15px;
         background-color: var(--secondBgColor);
         transform: translateX(-100%);
         transition: transform 0.5s;
+
+        @media screen and (min-width: $tablet) {
+            padding: 20px 30px 50px 30px;
+        }
 
         &.active {
             transform: translateX(0);
@@ -25,6 +28,8 @@
 }
 
 .nav__mobile-menu {
+    padding-bottom: 22px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     .icon-logo {
         fill: var(--whiteTextColor);
     }
@@ -34,7 +39,7 @@
     }
 }
 
-.mobile-menu__fist-part {
+.mobile-menu__first-part {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -46,6 +51,42 @@
     }
 }
 
+.mobile-menu__second-part {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.second-part__form {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: var(--bgColor);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 90px;
+    padding: 6px 20px;
+    margin-left: 20px;
+
+    @media screen and (min-width: $tablet) {
+        width: 342px;
+    }
+}
+
+.second-part__input {
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+    color: #484848;
+    &:focus {
+        border: none;
+    }
+}
+
+.mobile-menu__third-part {
+    display: flex;
+    align-items: center;
+}
+
 .mobile-menu__price {
     font-weight: 700;
     font-size: 12px;
@@ -54,6 +95,9 @@
 }
 
 .nav__list {
+    @media screen and (max-width: 1199px) {
+        padding-top: 50px;
+    }
     @media screen and (min-width: $desktop) {
         display: flex;
         padding: 15px 0;
