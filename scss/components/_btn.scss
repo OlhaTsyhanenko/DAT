@@ -20,8 +20,34 @@
     background-color: transparent;
     border: none;
     cursor: pointer;
+    .menu-close {
+        fill: var(--accentColor);
+    }
     @media screen and (min-width: $desktop) {
         display: none;
+    }
+    .visible {
+        display: none;
+    }
+}
+
+.btn__shopping-cart,
+.btn__comparison {
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid var(--whiteTextColor);
+    border-radius: 50%;
+    padding: 12px;
+    svg {
+        fill: var(--whiteTextColor);
+    }
+}
+
+.btn__comparison {
+    margin-left: 11px;
+    svg {
+        fill: var(--whiteTextColor);
     }
 }
 
@@ -105,6 +131,9 @@
     background-color: transparent;
     cursor: pointer;
     padding: 15px;
+    svg {
+        fill: var(--btnCard);
+    }
 }
 
 .footer__btn {

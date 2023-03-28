@@ -183,10 +183,37 @@ body {
   border: none;
   cursor: pointer;
 }
+.nav__btn .menu-close {
+  fill: var(--accentColor);
+}
 @media screen and (min-width: 1200px) {
   .nav__btn {
     display: none;
   }
+}
+.nav__btn .visible {
+  display: none;
+}
+
+.btn__shopping-cart,
+.btn__comparison {
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid var(--whiteTextColor);
+  border-radius: 50%;
+  padding: 12px;
+}
+.btn__shopping-cart svg,
+.btn__comparison svg {
+  fill: var(--whiteTextColor);
+}
+
+.btn__comparison {
+  margin-left: 11px;
+}
+.btn__comparison svg {
+  fill: var(--whiteTextColor);
 }
 
 @media screen and (max-width: 768px) {
@@ -266,6 +293,9 @@ body {
   cursor: pointer;
   padding: 15px;
 }
+.new__btn svg {
+  fill: var(--btnCard);
+}
 
 .footer__btn {
   padding: 12px 13px;
@@ -287,21 +317,70 @@ body {
 }
 
 .header__nav {
-  background-color: var(--secondBgColor);
+  background-color: rgba(30, 97, 64, 0.9);
   display: flex;
   justify-content: space-between;
 }
 
 @media screen and (max-width: 1199px) {
-  .nav__list {
+  .nav__inner {
+    position: absolute;
+    z-index: 1;
+    top: 52px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px 15px 50px 15px;
+    background-color: var(--secondBgColor);
+    transform: translateX(-100%);
+    transition: transform 0.5s;
+  }
+  .nav__inner.active {
+    transform: translateX(0);
+  }
+}
+
+.nav__mobile-menu .icon-logo {
+  fill: var(--whiteTextColor);
+}
+@media screen and (min-width: 1200px) {
+  .nav__mobile-menu {
     display: none;
   }
 }
+
+.mobile-menu__fist-part {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.mobile-menu__fist-part div {
+  display: flex;
+  align-items: center;
+}
+
+.mobile-menu__price {
+  font-weight: 700;
+  font-size: 12px;
+  color: var(--whiteTextColor);
+  margin-left: 7px;
+}
+
 @media screen and (min-width: 1200px) {
   .nav__list {
     display: flex;
     padding: 15px 0;
     border-right: 1px solid rgba(255, 255, 255, 0.2);
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .nav__item {
+    text-align: center;
+  }
+  .nav__item:not(:last-child) {
+    margin-bottom: 20px;
   }
 }
 
@@ -838,6 +917,9 @@ body {
   .footer__logo {
     flex-basis: calc(25% - 70px);
   }
+}
+.footer__logo .icon-logo {
+  fill: #1f1b1c;
 }
 
 .info-prod__inner {

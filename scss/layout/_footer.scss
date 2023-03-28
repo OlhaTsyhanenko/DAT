@@ -17,6 +17,9 @@
     @media screen and (min-width: $desktop) {
         flex-basis: calc(100% / 4 - 70px);
     }
+    .icon-logo {
+        fill: #1f1b1c;
+    }
 }
 
 .info-prod__inner {
