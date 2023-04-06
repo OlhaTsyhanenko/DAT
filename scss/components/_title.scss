@@ -31,7 +31,7 @@
             margin-left: 13px;
         }
 
-         @media screen and (min-width: $desktop) {
+        @media screen and (min-width: $desktop) {
             margin-left: 17px;
         }
     }
@@ -54,5 +54,32 @@
     &.white {
         color: var(--whiteTextColor);
     }
+}
+
+.hero__title {
+    display: flex;
+    align-items: flex-start;
+    font-weight: 700;
+    font-size: 25px;
+    color: var(--secondTextColor);
+    @media screen and (min-width: $desktop) {
+        font-size: 55px;
+        align-items: baseline;
+    }
+    p {
+        font-weight: 300;
+    }
+    svg {
+        flex-shrink: 0;
+        margin-right: 12px;
+    }
+}
+
+.hero__description {
+    font-size: 16px;
+    color: var(--textColor);
+    margin-top: 5px;
+    margin-bottom: 5px;
+
 }
 

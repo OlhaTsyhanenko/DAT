@@ -28,27 +28,27 @@
                 <use href="./images/symbol-defs.svg#icon-Logo"></use>
               </svg>
               <div>
-                <button class="btn__shopping-cart">
+                <button class="btn__shopping-cart white">
                   <svg width="16px" height="16px">
                     <use
                       href="./images/symbol-defs.svg#icon-shopping-cart"
                     ></use>
                   </svg>
                 </button>
-                <button class="btn__comparison">
+                <button class="btn__comparison white">
                   <svg width="16px" height="16px">
                     <use href="./images/symbol-defs.svg#icon-comparison"></use>
                   </svg>
                 </button>
-                <p class="mobile-menu__price">0,0 грн</p>
+                <p class="mobile-menu__price white">0,0 грн</p>
               </div>
             </div>
             <div class="mobile-menu__second-part">
-              <button class="btn__heart">
+              <button class="btn__heart white">
                 <img
                   src="images/header/heart.png"
                   alt="heart"
-                  width="18.4px"
+                  width="16px"
                   height="16px"
                 />
               </button>
@@ -134,6 +134,179 @@
           </svg>
         </button>
       </nav>
+
+      <section class="section__hero">
+        <div class="section hero__head">
+          <svg width="106px" height="48px" class="head__icon-logo">
+            <use href="./images/symbol-defs.svg#icon-Logo"></use>
+          </svg>
+
+          <form class="second-part__form format">
+            <input
+              type="text"
+              name="search"
+              id="search"
+              class="second-part__input"
+              placeholder="Пошук"
+            />
+            <button type="submit" class="zoom__btn">
+              <svg width="15px" height="15px">
+                <use href="./images/symbol-defs.svg#icon-zoom"></use>
+              </svg>
+            </button>
+          </form>
+
+          <div class="hero__call">
+            <button class="footer__btn">
+              <svg width="16px" height="16px">
+                <use href="./images/symbol-defs.svg#icon-call"></use>
+              </svg>
+            </button>
+            <div class="contacts__wrapper">
+              <div>
+                <a href="tel:+380671150058" class="link contacts__link"
+                  >+38 (067) 115 00 58</a
+                >
+                <svg width="10px" height="10px">
+                  <use href="./images/symbol-defs.svg#icon-arrow-down"></use>
+                </svg>
+              </div>
+              <a href="" class="link contacts__call"
+                >Замовити зворотній зв’язок</a
+              >
+            </div>
+          </div>
+
+          <div class="hero__group-btn">
+            <button class="btn__heart format">
+              <img
+                src="images/header/heart.png"
+                alt="heart"
+                width="16px"
+                height="16px"
+              />
+            </button>
+            <button class="btn__shopping-cart">
+              <svg width="16px" height="16px">
+                <use href="./images/symbol-defs.svg#icon-shopping-cart"></use>
+              </svg>
+            </button>
+            <button class="btn__comparison">
+              <svg width="16px" height="16px">
+                <use href="./images/symbol-defs.svg#icon-comparison"></use>
+              </svg>
+            </button>
+            <p class="mobile-menu__price">0,0 грн</p>
+          </div>
+        </div>
+
+        <ul class="section list hero__choose">
+          <li class="choose__item">
+            <a class="link choose__link current">
+              <svg width="24px" height="24px">
+                <use href="./images/symbol-defs.svg#icon-seeds"></use>
+              </svg>
+              <div>
+                <span>Насіння</span>
+                <button class="choose__btn btn-more-js change">
+                  <svg width="12px" height="12px" class="checked">
+                    <use href="./images/symbol-defs.svg#icon-arrow-down"></use>
+                  </svg>
+                  <svg
+                    width="12px"
+                    height="12px"
+                    class="arrow-up not-checked visible"
+                  >
+                    <use href="./images/symbol-defs.svg#icon-arrow-down"></use>
+                  </svg>
+                </button>
+              </div>
+            </a>
+          </li>
+          <ul class="list choose__submenu hidden hidden-js">
+            <li class="submenu__item">
+              <a class="link choose__link">
+                <svg width="24px" height="24px">
+                  <use href="./images/symbol-defs.svg#icon-sapling"></use>
+                </svg>
+                <span>Засоби захисту рослин</span>
+              </a>
+            </li>
+            <li class="submenu__item">
+              <a class="link choose__link">
+                <svg width="24px" height="24px">
+                  <use href="./images/symbol-defs.svg#icon-fertilizer"></use>
+                </svg>
+                <span>Добрива</span>
+              </a>
+            </li>
+            <li class="submenu__item">
+              <a class="link choose__link">
+                <svg width="24px" height="24px">
+                  <use href="./images/symbol-defs.svg#icon-plants"></use>
+                </svg>
+                <span>кормова група</span>
+              </a>
+            </li>
+            <li class="submenu__item">
+              <a class="link choose__link">
+                <svg width="24px" height="24px">
+                  <use href="./images/symbol-defs.svg#icon-farmer"></use>
+                </svg>
+                <span>Агроному в поміч</span>
+              </a>
+            </li>
+          </ul>
+        </ul>
+
+        <div class="hero">
+          <div class="hero__wrapper">
+            <h1 class="hero__title">
+              <svg width="32px" height="25px">
+                <use href="./images/symbol-defs.svg#icon-title"></use>
+              </svg>
+              <div>
+                <span>Аграрний</span>
+                <p>інтернет-магазин</p>
+                <p class="hero__description">
+                  Основна сфера діяльності – дистрибуція насіння, засобів
+                  захисту рослин, мінеральних макро - та мікродобрив
+                </p>
+                <button class="btn hero__btn">Про компанію</button>
+              </div>
+            </h1>
+          </div>
+          <div class="hero__pic">
+            <picture>
+              <source
+                srcset="
+                  ./images/hero/pic_desktop.png    1x,
+                  ./images/hero/pic@2x_desktop.png 2x
+                "
+                media="(min-width: 768px)"
+                type="image/png"
+              />
+              <source
+                srcset="
+                  ./images/hero/pic_mobile.png    1x,
+                  ./images/hero/pic@2x_mobile.png 2x
+                "
+                media="(max-width: 767px)"
+                type="image/png"
+              />
+              <img
+                class="hero__img"
+                src="./images/hero/pic_desktop.png"
+                alt="pic"
+              />
+            </picture>
+            <div class="hero__leaf1"></div>
+            <div class="hero__leaf2"></div>
+            <div class="hero__leaf3"></div>
+            <button class="btn hero__btn">Про компанію</button>
+          </div>
+        </div>
+      </section>
     </header>
 
     <main>
