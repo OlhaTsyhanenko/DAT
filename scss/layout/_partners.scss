@@ -1,5 +1,4 @@
 .section__partners {
-    background-color: antiquewhite;
     padding: 35px 0 40px 0;
 
     @media screen and (min-width: $tablet) {
@@ -32,16 +31,8 @@
 }
 
 .partners__img {
-    // width: 93px;
-    // height: 47px;
-    // object-fit: cover;
     margin-left: auto;
     margin-right: auto;
-
-    @media screen and (min-width: $tablet) {
-        // width: 175px;
-        // height: 86px;
-    }
 }
 
 .partners__slider .slick-arrow {

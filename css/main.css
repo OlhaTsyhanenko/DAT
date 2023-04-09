@@ -47,7 +47,9 @@ body {
   min-width: var(--mobile);
   margin: 0;
   color: var(--textColor);
-  background-color: var(--bgColor);
+  background: radial-gradient(50% 50% at 50% 50%, rgba(231, 78, 19, 0.1) 0%, rgba(231, 78, 19, 0) 100%), radial-gradient(50% 50% at 50% 50%, rgba(132, 190, 81, 0.3) 0%, rgba(210, 230, 189, 0) 100%);
+  background-size: 713px 713px, 1068px 1068px;
+  background-repeat: repeat;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 12px;
@@ -1325,7 +1327,6 @@ body {
 }
 
 .section__partners {
-  background-color: antiquewhite;
   padding: 35px 0 40px 0;
 }
 @media screen and (min-width: 768px) {
@@ -1365,6 +1366,7 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+
 .partners__slider .slick-arrow {
   position: absolute;
   top: 50%;
@@ -1466,6 +1468,7 @@ body {
 
 .footer {
   position: relative;
+  background-color: var(--bgColor);
 }
 
 .footer__inner {
